@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contactos{% endblock %}
+{% block body %}
+    {{ include ('partials/log_out.html.twig') }}
+
+    <h1>Nuevo contacto</h1>
+    {{ form_start(formulario) }}
+    {{ form_widget(formulario) }}
+    {{ form_end(formulario) }}
+{% endblock %}
